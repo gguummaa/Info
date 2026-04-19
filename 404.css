@@ -1,0 +1,30 @@
+body {
+    background-color: #526579;
+}
+
+
+.spng {
+ width: 30%;
+ margin: 0 auto; /* 좌우 가운데 */
+ display: block;
+ margin-top: 130px;
+}
+
+
+.bloccks {
+    display: flex;
+    flex-direction: column; /* 세로로 쌓기 */
+
+    align-items: center;     /* 좌우 중앙 */
+    height: 100vh;           /* 화면 전체 높이 기준 */
+    gap: 10px;               /* 404와 텍스트 사이 간격 */
+}
+.pp {
+    font-size: 80px; /* 크기 조절 */
+    font-weight: bold;
+    margin: 0;
+}
+.bloccks p:last-child {
+    font-size: 24px; /* Page not found 크기 */
+    margin: 0;
+}
