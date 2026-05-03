@@ -30,7 +30,62 @@ body {
 .top-icon {
     margin-left: 30px; /* 왼쪽에서 30px 띄우기 */
 }
+.right-menu {
+    margin-left: auto;        /* 오른쪽 끝으로 전체 이동 */
+    display: flex;
+    align-items: center;
+    gap: 20px;                /* 텍스트와 버튼 사이 간격 */
+    margin-right: 65px;
+}
 
+.language-selector {
+    position: relative;
+}
+
+.top-language-text {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #607183;
+    user-select: none;
+}
+
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #2d4052;
+    border-radius: 8px;
+    min-width: 150px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    z-index: 1001;
+}
+
+.language-option {
+    padding: 12px 16px;
+    color: #b8c5d0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.language-option:hover {
+    background-color: #3a4f64;
+}
+
+.language-option:active {
+    background-color: #425a70;
+}
+
+.top-language-text:hover {
+    color: #6e8094;
+}
+
+.top-language-text:active {
+    color: #67778a;
+}
 .top-bar-2 {
     position: absolute;
     bottom: 0;
